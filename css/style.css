@@ -1,0 +1,356 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600");
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+h1 {
+  font-size: 2em;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 1.2em;
+  letter-spacing: 0.5px;
+  font-weight: 300;
+  line-height: 150%;
+  color: #f1f3f4;
+  margin-bottom: 70px;
+}
+
+h3 {
+  font-size: 1.3em;
+  font-weight: 600;
+  line-height: 150%;
+  color: #455b64;
+}
+
+h4 {
+  font-size: 1.1em;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #455b64;
+  margin: 0;
+}
+
+p {
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 170%;
+  color: #617d8a;
+  margin-top: 10px;
+}
+
+a.refer-btn {
+  background-color: rgba(236, 70, 70, 0.97);
+  color: #f1f3f4;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  font-size: 0.8em;
+  padding: 15px 35px;
+  border-bottom: 2px solid #e82d2b;
+}
+a.refer-btn:hover {
+  background-color: rgba(237, 84, 84, 0.97);
+}
+
+a.inline-links {
+  color: #44a8de;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90%;
+  height: auto;
+  padding: 100px 5% 120px 5%;
+  background-color: #455b64;
+  color: #fff;
+  overflow: hidden;
+  background-image: url("https://github.com/atloomer/legwork-images/blob/master/mobile-bg.jpg?raw=true");
+  background-position: 70% 80%;
+  background-repeat: no-repeat;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90%;
+  padding: 75px 5%;
+  background-color: #f1f3f4;
+  z-index: 9;
+}
+main .main-artwork {
+  display: block;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  padding: 50px 0;
+}
+main .main-artwork img {
+  width: 80%;
+  padding: 0 10%;
+}
+main article {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.promotional-rules {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90%;
+  padding: 50px 5%;
+  background-color: #fff;
+}
+.promotional-rules img {
+  width: 80px;
+  margin-left: -15px;
+}
+
+.promotional-flex-containers {
+  padding: 15px 0;
+}
+
+.additional-referral-info {
+  display: block;
+  width: 90%;
+  padding: 0 5% 50px 5%;
+}
+.additional-referral-info p {
+  font-size: 0.8em;
+  color: rgba(69, 90, 100, 0.6);
+  text-align: left;
+  margin: 10px 0;
+}
+
+@media screen and (min-width: 750px) {
+  header {
+    width: 80%;
+    padding: 120px 10%;
+    background-position: 100% 80%;
+  }
+
+  main {
+    width: 80%;
+    padding: 75px 10%;
+  }
+
+  .promotional-rules {
+    width: 80%;
+    padding: 50px 10%;
+  }
+
+  .additional-referral-info {
+    width: 80%;
+    padding: 0 10% 50px 10%;
+  }
+  .additional-referral-info p {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1000px) {
+  h1 {
+    font-size: 2.2em;
+  }
+
+  header {
+    width: 90%;
+    height: 255px;
+    padding: 120px 5%;
+    background-image: url("https://github.com/atloomer/legwork-images/blob/master/small-desktop-backgroundrgb.jpg?raw=true");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 100%;
+  }
+
+  .header-content {
+    width: 45%;
+  }
+
+  main {
+    width: 90%;
+    padding: 100px 5%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main .main-artwork {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 40%;
+    padding: 0;
+  }
+  main article {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    width: 55%;
+    padding: 0 0 0 5.5%;
+  }
+
+  .promotional-rules {
+    width: 90%;
+    padding: 50px 5%;
+  }
+
+  .promotional-flex-containers {
+    width: 80%;
+  }
+
+  .additional-referral-info p {
+    line-height: 100%;
+  }
+}
+@media screen and (min-width: 1366px) {
+  h1 {
+    font-size: 2.5em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  h3 {
+    font-size: 1.8em;
+  }
+
+  p {
+    font-size: 1.2em;
+  }
+
+  header {
+    background-image: url("https://github.com/atloomer/legwork-images/blob/master/medium-desktop-bg.jpg?raw=true");
+    height: 350px;
+    width: 80%;
+    padding: 150px 10% 90px 10%;
+  }
+
+  main {
+    width: 85%;
+    padding: 150px 7.5%;
+  }
+  main .main-artwork {
+    width: 50%;
+  }
+  main .main-artwork img {
+    width: 85%;
+    padding: 0;
+  }
+  main article {
+    width: 45%;
+    padding: 0 0 0 5%;
+  }
+
+  .promotional-rules {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 100px 5% 50px 5%;
+  }
+  .promotional-rules p {
+    font-size: 1em;
+  }
+
+  .promotional-flex-containers {
+    width: 30%;
+  }
+}
+@media screen and (min-width: 1800px) {
+  header {
+    width: 70%;
+    height: 475px;
+    padding: 200px 15% 90px 15%;
+  }
+
+  .header-content {
+    padding-top: 40px;
+  }
+
+  main {
+    width: 70%;
+    padding: 200px 15%;
+  }
+
+  .promotional-rules {
+    width: 70%;
+    padding: 100px 15% 50px 15%;
+  }
+}
+@media screen and (min-width: 2000px) {
+  h1 {
+    font-size: 2.8em;
+    margin-bottom: 0;
+  }
+
+  h2 {
+    font-size: 1.7em;
+  }
+
+  h4 {
+    font-size: 1.3em;
+    padding-top: 10px;
+  }
+
+  header {
+    height: 550px;
+    width: 65%;
+    padding: 200px 17.5% 90px 17.5%;
+    background-position: 0 55%;
+  }
+
+  .header-content {
+    width: 40%;
+    padding-top: 70px;
+  }
+
+  main {
+    width: 65%;
+    padding: 200px 17.5%;
+  }
+
+  .promotional-rules {
+    width: 65%;
+    padding: 100px 17.5% 50px 17.5%;
+  }
+}
+@media screen and (min-width: 2200px) {
+  .promotional-rules img {
+    width: 100px;
+    margin-left: -20px;
+  }
+}
