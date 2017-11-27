@@ -1,0 +1,376 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600");
+
+// Colors
+$white: #fff;
+$lw-red: #ee3b23;
+$lw-indigo: #44a8de;
+$lw-deep-blue: #253237;
+$lw-steel-blue: #617d8a;
+$lw-blue: #455b64;
+$lw-salmon: #e84849;
+$lw-gravel-blue: #374851;
+$lw-off-white: #f1f3f4;
+$lw-orange: #f79523;
+$btn-border: #e82d2b;
+// With Opacity
+$op-white: rgba(255, 255, 255, 0.7);
+$op-blue: rgba(69, 90, 100, 0.96);
+$light-blue: rgba(69, 90, 100, 0.6);
+$light-gray: rgba(69, 90, 100, 0.4);
+$btn-red: rgba(236, 70, 70, 0.97);
+$btn-hover: rgba(237, 84, 84, 0.97);
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+// Type
+h1 {
+  font-size: 2em;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 1.2em;
+  letter-spacing: 0.5px;
+  font-weight: 300;
+  line-height: 150%;
+  color: $lw-off-white;
+  margin-bottom: 70px;
+}
+
+h3 {
+  font-size: 1.3em;
+  font-weight: 600;
+  line-height: 150%;
+  color: $lw-blue;
+}
+
+h4 {
+  font-size: 1.1em;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: $lw-blue;
+  margin: 0;
+}
+
+p {
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 170%;
+  color: $lw-steel-blue;
+  margin-top: 10px;
+}
+
+// Buttons and Links
+a.refer-btn {
+  background-color: $btn-red;
+  color: $lw-off-white;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  font-size: 0.8em;
+  padding: 15px 35px;
+  border-bottom: 2px solid $btn-border;
+
+  &:hover {
+    background-color: $btn-hover;
+  }
+}
+
+a.inline-links {
+  color: $lw-indigo;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: auto;
+  padding: 100px 5% 120px 5%;
+  background-color: $lw-blue;
+  color: $white;
+  overflow: hidden;
+  background-image: url('https://github.com/atloomer/legwork-images/blob/master/mobile-bg.jpg?raw=true');
+  background-position: 70% 80%;
+  background-repeat: no-repeat;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  padding: 75px 5%;
+  background-color: $lw-off-white;
+  z-index: 9;
+
+  .main-artwork {
+    display: block;
+    order: 2;
+    padding: 50px 0;
+
+    img {
+      width: 80%;
+      padding: 0 10%;
+    }
+  }
+
+  article {
+    order: 1;
+  }
+}
+
+.promotional-rules {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  padding: 50px 5%;
+  background-color: $white;
+
+  img {
+    width: 80px;
+    margin-left: -15px;
+  }
+}
+
+.promotional-flex-containers {
+  padding: 15px 0;
+}
+
+.additional-referral-info {
+  display: block;
+  width: 90%;
+  padding: 0 5% 50px 5%;
+
+  p {
+    font-size: 0.8em;
+    color: $light-blue;
+    text-align: left;
+    margin: 10px 0;
+  }
+}
+
+// Tablet Resize
+@media screen and (min-width: 750px) {
+  header {
+    width: 80%;
+    padding: 120px 10%;
+    background-position: 100% 80%;
+  }
+
+  main {
+    width: 80%;
+    padding: 75px 10%;
+  }
+
+  .promotional-rules {
+    width: 80%;
+    padding: 50px 10%;
+  }
+
+  .additional-referral-info {
+    width: 80%;
+    padding: 0 10% 50px 10%;
+
+    p {
+      text-align: center;
+    }
+  }
+}
+
+// Small computer screens
+@media screen and (min-width: 1000px) {
+  h1 {
+    font-size: 2.2em;
+  }
+
+  header {
+    width: 90%;
+    height: 255px;
+    padding: 120px 5%;
+    background-image: url("https://github.com/atloomer/legwork-images/blob/master/small-desktop-backgroundrgb.jpg?raw=true");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 100%;
+  }
+
+  .header-content {
+    width: 45%;
+  }
+
+  main {
+    width: 90%;
+    padding: 100px 5%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    .main-artwork {
+      order: 1;
+      width: 40%;
+      padding: 0;
+    }
+
+    article {
+      order: 2;
+      width: 55%;
+      padding: 0 0 0 5.5%;
+    }
+  }
+
+  .promotional-rules {
+    width: 90%;
+    padding: 50px 5%;
+  }
+
+  .promotional-flex-containers {
+    width: 80%;
+  }
+
+  .additional-referral-info p {
+    line-height: 100%;
+  }
+}
+
+// Medium screen size
+@media screen and (min-width: 1366px) {
+  h1 {
+    font-size: 2.5em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  h3 {
+    font-size: 1.8em;
+  }
+
+  p {
+    font-size: 1.2em;
+  }
+
+  header {
+    background-image: url("https://github.com/atloomer/legwork-images/blob/master/medium-desktop-bg.jpg?raw=true");
+    height: 350px;
+    width: 80%;
+    padding: 150px 10% 90px 10%;
+  }
+
+  main {
+    width: 85%;
+    padding: 150px 7.5%;
+
+    .main-artwork {
+      width: 50%;
+      
+      img {
+        width: 85%;
+        padding: 0;
+      }
+    }
+
+    article {
+      width: 45%;
+      padding: 0 0 0 5%;
+    }
+  }
+  
+  .promotional-rules {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 100px 5% 50px 5%;
+    
+    p {
+      font-size: 1em;
+    }
+  }
+  
+  .promotional-flex-containers {
+    width: 30%;
+  }
+}
+
+// Large screen sizes
+@media screen and (min-width: 1800px) {
+  
+  header {
+    width: 70%;
+    height: 475px;
+    padding: 200px 15% 90px 15%;
+  }
+  
+  .header-content {
+    padding-top: 40px;
+  }
+  
+  main {
+    width: 70%;
+    padding: 200px 15%;
+  }
+  
+  .promotional-rules {
+    width: 70%;
+    padding: 100px 15% 50px 15%;
+  }
+  
+}
+
+// Screen sizes too large for anyones good
+@media screen and (min-width: 2000px) {
+  
+  h1 {
+    font-size: 2.8em;
+    margin-bottom: 0;
+  }
+  
+  h2 {
+    font-size: 1.7em;
+  }
+  
+  h4 {
+    font-size: 1.3em;
+    padding-top: 10px;
+  }
+  
+  header {
+    height: 550px;
+    width: 65%;
+    padding: 200px 17.5% 90px 17.5%;
+    background-position: 0 55%;
+  }
+  
+  .header-content {
+    width: 40%;
+    padding-top: 70px;
+  }
+  
+  main {
+    width: 65%;
+    padding: 200px 17.5%;
+  }
+  
+  .promotional-rules {
+    width: 65%;
+    padding: 100px 17.5% 50px 17.5%;
+  }
+  
+}
+
+// XL
+@media screen and (min-width: 2200px) {
+  
+  .promotional-rules {
+    
+    img {
+      width: 100px;
+      margin-left: -20px;
+    }
+  }
+  
+}
